@@ -53,13 +53,13 @@ To run this plugin properly, the following JAR files must be installed on your s
 - ProtocolLib.jar (note: ensure the version is compatible with Minecraft 1.21.4)
 
  
-# Feature Introduction
+# 🚀 Feature Introduction
 This plugin offers 6 gameplay modes and supports multiple custom game configurations. It uses SQLite to store player data such as kills, victories, and deaths. For detailed information, please visit:https://afdian.com/item/812f2ee82ef411f0b89b52540025c377
-# Additional Notes
+# 📝 Additional Notes
 The plugin draws inspiration from the "Manhunt" gameplay created by Dream, a YouTuber with millions of subscribers.
 This is my first Minecraft plugin. While the code may not be perfectly standardized, it has been tested through over 100 gameplay sessions with friends—ensuring a smooth and enjoyable gaming experience,Thanks!
 
-# Precautions
+# 📢 Precautions
 1.Custom helmets in the game require downloading a resource pack: https://wwauz.lanzn.com/i0TQV3dymywj. They are only visible when using Minecraft 1.21.4.
 2.Players will automatically enter the lobby before the game starts. You may notice a lobby world folder in the server root directory—feel free to modify it to create your desired lobby.
 3.A database storing players' kills, victories, and deaths will be generated in the plugin folder.
