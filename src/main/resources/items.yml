@@ -1,0 +1,92 @@
+# items.yml - 游戏模式投票GUI物品配置
+
+gui:
+  title: "&c投票选择游戏模式" # GUI 的标题
+
+items:
+  water_bucket:
+    name: "&e要塞战争"
+    lore:
+      - "投票选择要塞战争模式"
+    # vote-line-format: "&7当前票数: %votes%" # 当前票数行的格式，%votes% 会被替换
+    unbreakable: true
+    add-dummy-enchant: true # 是否添加一个隐藏的附魔使其发光
+    item-flags: # 这三个选项并不重要,保证每个物品都设置了这三个就行
+      - HIDE_ENCHANTS
+      - HIDE_UNBREAKABLE
+      - HIDE_ATTRIBUTES
+
+  lava_bucket:
+    name: "&c原版猎人"
+    lore:
+      - "投票选择原版猎人模式"
+    # vote-line-format: "&7当前票数: %votes%"
+    unbreakable: true
+    add-dummy-enchant: true
+    item-flags:
+      - HIDE_ENCHANTS
+      - HIDE_UNBREAKABLE
+      - HIDE_ATTRIBUTES
+
+  flower: # Material.POPPY
+    name: "&c原版猎人但是随机掉落"
+    lore:
+      - "投票选择原版猎人但是随机掉落模式"
+    # vote-line-format: "&7当前票数: %votes%"
+    unbreakable: true
+    add-dummy-enchant: true
+    item-flags:
+      - HIDE_ENCHANTS
+      - HIDE_UNBREAKABLE
+      - HIDE_ATTRIBUTES
+
+  lightning_rod:
+    name: "&c原版猎人但是内鬼模式"
+    lore:
+      - "投票选择内鬼模式"
+      - "玩法说明:逃亡者和猎人的比例改为接近1:3"
+      - "但是猎人中会有一个人是内鬼"
+      - "内鬼需要帮助逃亡者获得游戏的胜利"
+      - "玩家通过/vote来进行投票选出内鬼！"
+      - "当有玩家投票后，如果某个猎人被投票的票数大于一半的猎人数量，这个猎人会被淘汰"
+      - "当所有猎人都投票后，票数最多的某个猎人会被淘汰"
+    # vote-line-format: "&7当前票数: %votes%"
+    unbreakable: true
+    add-dummy-enchant: true
+    item-flags:
+      - HIDE_ENCHANTS
+      - HIDE_UNBREAKABLE
+      - HIDE_ATTRIBUTES
+
+  sword: # Material.NETHERITE_SWORD
+    name: "&c猎人一追多模式"
+    lore:
+      - "投票选择猎人一追多模式"
+      - "玩法说明:逃生者:猎人最大程度接近7:1"
+      - "猎人有除头盔外全套合金盔甲"
+      - "猎人将在游戏开始1h后获得鞘翅"
+      - "猎人死亡不掉落"
+      - "猎人每击杀一名逃亡者就会减少该猎人一颗心的生命上限"
+      - "逃生者需要击杀末影龙获得游戏胜利"
+    # vote-line-format: "&7当前票数: %votes%"
+    unbreakable: true
+    add-dummy-enchant: true
+    item-flags:
+      - HIDE_ENCHANTS
+      - HIDE_UNBREAKABLE
+      - HIDE_ATTRIBUTES
+      - HIDE_DESTROYS   # 示例：为剑添加额外的flags
+      - HIDE_PLACED_ON  # 示例：为剑添加额外的flags
+
+  end_crystal:
+    name: "&c点击优先分配为猎人"
+    lore:
+      - "你将会被优先被分配到猎人阵营"
+      - "ps:只适用于原版猎人,要塞猎人和随机掉落"
+    # 这个物品没有票数行，所以在调用 createConfigurableItem 时 includeVoteLine 为 false
+    unbreakable: true
+    add-dummy-enchant: true
+    item-flags:
+      - HIDE_ENCHANTS
+      - HIDE_UNBREAKABLE
+      - HIDE_ATTRIBUTES

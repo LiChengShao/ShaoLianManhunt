@@ -1,0 +1,6 @@
+
+# 这个ID将显示在记分板上
+server-id: "yourserverip.com"
+
+# 1是强制要塞战争模式，2是强制原版猎人模式，其他的值是投票
+gameMode: 0

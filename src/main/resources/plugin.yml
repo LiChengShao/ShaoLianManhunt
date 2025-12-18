@@ -1,0 +1,58 @@
+name: ShaolianManHunt
+version: '${project.version}'
+main: com.shaolian.manhunt.Main
+api-version: '1.21'
+author: Shaolian
+description: A manhunt plugin where hunters chase runners
+depend: [LibsDisguises, DecentHolograms]
+softdepend: [PlaceholderAPI, ItemsAdder]
+
+
+commands:
+  show:
+    description: 查看玩家统计数据
+    usage: /show <kills|kd|wins> <玩家名>
+    aliases: [stats]
+
+  compass:
+    description: 获取一个追杀指南针
+    usage: /<command>
+
+  tpa:
+    description: 传送到追杀者
+    usage: /<command>
+
+  gotoend:
+    description: 传送到末地
+    usage: /gotoend
+
+  vote:
+    description: 投票
+    usage: /vote
+
+  runner:
+    description: 进入主播阵营(一人成军)
+    usage: /runner
+
+  unrunner:
+    description: 退出主播阵营(一人成军)
+    usage: /unrunner
+
+  hushenfu:
+    description: 获得新的护身符
+    usage: /hushenfu
+
+#  startgame:
+#    description: 强制开始游戏(倒计时设为10秒)
+#    permission: op
+#    usage: /startgame
+
+
+#permissions:
+#  manhunt.hunter:
+#    description: Allows a player to be a hunter
+#    default: op
+#  manhunt.runner:
+#    description: Allows a player to be a runner
+#    default: op
+
