@@ -12,7 +12,7 @@
 
 - PlaceholderAPI-2.11.6.jar
   
-- packetevents-spigot-2.7.1-SNAPSHOT.jar
+- packetevents-spigot-2.11.0.jar([LibsDisguises插件会尝试自己下载，也可以自己下载)
 
 - ProtocolLib.jar（注意：请确保版本与 Minecraft 1.21.4 兼容）
 
@@ -36,7 +36,7 @@ To run this plugin properly, the following JAR files must be installed on your s
 - LibsDisguises-10.0.44-Free.jar
 - LoneLibs_1.0.65.jar
 - PlaceholderAPI-2.11.6.jar
-- packetevents-spigot-2.7.1-SNAPSHOT.jar
+- packetevents-spigot-2.11.0.jar(The LibsDisguises plugin will attempt to download itself, or it can download itself.)
 - ProtocolLib.jar (note: ensure the version is compatible with Minecraft 1.21.4)
 
  
