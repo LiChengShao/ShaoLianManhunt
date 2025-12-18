@@ -24,7 +24,11 @@ https://afdian.com/item/812f2ee82ef411f0b89b52540025c377
 插件灵感来自油管的千万粉丝Dream开创的猎人追捕
 这是我制作的第一款mc插件，代码可能存在不规范，但是此插件经过上百局和朋友的游玩后，可以保证游戏体验极好，感谢!
 
-
+# 一些非必要的说明
+1.游戏中的自定义头盔需要下载材质包：https://wwauz.lanzn.com/i0TQV3dymywj 并且使用1.21.4才可以看到
+2.游戏开始前玩家进入默认会进入大厅，可以注意到服务端根目录有lobby世界文件夹，可自行修改做出你想要的大厅
+3.插件文件夹会生成玩家的击杀/胜利/死亡数据库
+4.将服务端根目录的配置文件server.properties的spawn protect改成0，防止玩家无法在出生点附近破坏方块
 
 
 # ShaoLianManhunt
@@ -45,3 +49,9 @@ This plugin offers 6 gameplay modes and supports multiple custom game configurat
 # Additional Notes
 The plugin draws inspiration from the "Manhunt" gameplay created by Dream, a YouTuber with millions of subscribers.
 This is my first Minecraft plugin. While the code may not be perfectly standardized, it has been tested through over 100 gameplay sessions with friends—ensuring a smooth and enjoyable gaming experience,Thanks!
+
+# Additional Non-Essential Notes
+1.Custom helmets in the game require downloading a resource pack: https://wwauz.lanzn.com/i0TQV3dymywj. They are only visible when using Minecraft 1.21.4.
+2.Players will automatically enter the lobby before the game starts. You may notice a lobby world folder in the server root directory—feel free to modify it to create your desired lobby.
+3.A database storing players' kills, victories, and deaths will be generated in the plugin folder.
+4.Set spawn-protect to 0 in the server.properties configuration file (located in the server root directory) to prevent players from being unable to break blocks near the spawn point.
