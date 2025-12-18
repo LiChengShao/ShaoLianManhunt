@@ -11,6 +11,8 @@
 - LoneLibs_1.0.65.jar
 
 - PlaceholderAPI-2.11.6.jar
+  
+- packetevents-spigot-2.7.1-SNAPSHOT.jar
 
 - ProtocolLib.jar（注意：请确保版本与 Minecraft 1.21.4 兼容）
 
@@ -34,6 +36,7 @@ To run this plugin properly, the following JAR files must be installed on your s
 - LibsDisguises-10.0.44-Free.jar
 - LoneLibs_1.0.65.jar
 - PlaceholderAPI-2.11.6.jar
+- packetevents-spigot-2.7.1-SNAPSHOT.jar
 - ProtocolLib.jar (note: ensure the version is compatible with Minecraft 1.21.4)
 
  
