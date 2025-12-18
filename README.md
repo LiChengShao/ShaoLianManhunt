@@ -29,6 +29,15 @@ https://afdian.com/item/812f2ee82ef411f0b89b52540025c377
 2.游戏开始前玩家进入默认会进入大厅，可以注意到服务端根目录有lobby世界文件夹，可自行修改做出你想要的大厅
 3.插件文件夹会生成玩家的击杀/胜利/死亡数据库
 4.将服务端根目录的配置文件server.properties的spawn protect改成0，防止玩家无法在出生点附近破坏方块
+5.批处理文件（启动脚本）可以修改为如下格式：
+@echo off
+:restart
+echo 正在启动服务器...
+"C:\Program Files\Java\jdk-21\bin\java.exe" -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=127.0.0.1 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897 -Xmx4096M -Xms1024M -jar paper-1.21.4-225.jar nogui
+echo 服务器已关闭，5 秒后重启...
+timeout /t 5 /nobreak >nul
+goto restart
+这将在服务器被中断后5s重新自动运行。当游戏结束后，插件会删除世界存档并关闭服务器，这段启动脚本将使得服务器完全自动化
 
 
 # ShaoLianManhunt
@@ -55,3 +64,12 @@ This is my first Minecraft plugin. While the code may not be perfectly standardi
 2.Players will automatically enter the lobby before the game starts. You may notice a lobby world folder in the server root directory—feel free to modify it to create your desired lobby.
 3.A database storing players' kills, victories, and deaths will be generated in the plugin folder.
 4.Set spawn-protect to 0 in the server.properties configuration file (located in the server root directory) to prevent players from being unable to break blocks near the spawn point.
+5.The batch file (startup script) can be modified to the following format:
+@echo off
+:restart
+echo Starting the server...
+"C:\Program Files\Java\jdk-21\bin\java.exe" -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyHost=127.0.0.1 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897 -Xmx4096M -Xms1024M -jar paper-1.21.4-225.jar nogui
+echo Server closed. Restarting in 5 seconds...
+timeout /t 5 /nobreak >nul
+goto restart
+This script will automatically restart the server 5 seconds after it is interrupted. When a game ends, the plugin will delete the world save files and shut down the server—this startup script enables full automation of the server.
